@@ -1,0 +1,127 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"settings": {
+		"color": {
+			"palette": [
+				{ "slug": "base", "color": "#F4EFE3", "name": "Sandbar" },
+				{ "slug": "contrast", "color": "#1E3A28", "name": "Deep Forest" },
+				{ "slug": "accent-1", "color": "#2F5D3A", "name": "River Green" },
+				{ "slug": "accent-2", "color": "#8A5A2B", "name": "Driftwood" },
+				{ "slug": "river-mist", "color": "#DCE8E0", "name": "River Mist" },
+				{ "slug": "whitecap", "color": "#FFFFFF", "name": "Whitecap" }
+			]
+		},
+		"typography": {
+			"fluid": false,
+			"fontFamilies": [
+				{
+					"slug": "bitter",
+					"name": "Bitter",
+					"fontFamily": "Bitter, Georgia, serif",
+					"fontFace": [
+						{
+							"fontFamily": "Bitter",
+							"fontStyle": "normal",
+							"fontWeight": "100 900",
+							"src": [ "file:./assets/fonts/bitter/Bitter-VariableFont_wght.woff2" ]
+						}
+					]
+				},
+				{
+					"slug": "manrope",
+					"name": "Manrope",
+					"fontFamily": "Manrope, system-ui, sans-serif",
+					"fontFace": [
+						{
+							"fontFamily": "Manrope",
+							"fontStyle": "normal",
+							"fontWeight": "200 800",
+							"src": [ "file:./assets/fonts/manrope/Manrope-VariableFont_wght.woff2" ]
+						}
+					]
+				}
+			],
+			"fontSizes": [
+				{ "slug": "small", "size": "0.875rem", "name": "Small" },
+				{ "slug": "medium", "size": "1.125rem", "name": "Medium" },
+				{ "slug": "large", "size": "1.5rem", "name": "Large" },
+				{ "slug": "x-large", "size": "2rem", "name": "Extra Large" },
+				{ "slug": "xx-large", "size": "3rem", "name": "Extra Extra Large" }
+			]
+		},
+		"spacing": {
+			"spacingSizes": [
+				{ "slug": "20", "size": "0.5rem", "name": "Tiny" },
+				{ "slug": "30", "size": "1rem", "name": "Small" },
+				{ "slug": "40", "size": "1.5rem", "name": "Medium" },
+				{ "slug": "50", "size": "2.5rem", "name": "Large" },
+				{ "slug": "60", "size": "4rem", "name": "X-Large" }
+			]
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "var:preset|color|base",
+			"text": "var:preset|color|contrast"
+		},
+		"typography": {
+			"fontFamily": "var:preset|font-family|manrope",
+			"fontSize": "var:preset|font-size|medium",
+			"fontWeight": "400",
+			"lineHeight": "1.6"
+		},
+		"css": ".wp-site-blocks > footer { margin-block-start: 0; }",
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|bitter",
+					"fontWeight": "700",
+					"lineHeight": "1.2"
+				}
+			},
+			"link": {
+				"color": { "text": "var:preset|color|accent-1" },
+				":hover": {
+					"color": { "text": "var:preset|color|contrast" }
+				}
+			},
+			"button": {
+				"color": {
+					"background": "var:preset|color|accent-1",
+					"text": "var:preset|color|whitecap"
+				},
+				":hover": {
+					"color": {
+						"background": "var:preset|color|contrast",
+						"text": "var:preset|color|base"
+					}
+				}
+			}
+		},
+		"blocks": {
+			"core/button": {
+				"color": {
+					"background": "var:preset|color|accent-1",
+					"text": "var:preset|color|whitecap"
+				},
+				"border": { "radius": "99px" },
+				"typography": { "fontWeight": "600" }
+			},
+			"core/quote": {
+				"border": {
+					"color": "var:preset|color|accent-2",
+					"style": "solid",
+					"width": "0 0 0 4px"
+				},
+				"typography": {
+					"fontFamily": "var:preset|font-family|bitter",
+					"fontWeight": "500"
+				}
+			},
+			"core/separator": {
+				"color": { "text": "var:preset|color|accent-2" }
+			}
+		}
+	}
+}
