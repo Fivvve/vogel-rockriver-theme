@@ -13,6 +13,7 @@ Made by Travis Vogel for Content Management Systems 2, Week 3.
 - Font sizes and spacing keep the parent slugs (small to xx-large, and 20 to 60) with rem values from the style guide.
 - Buttons are River Green with white text and turn Deep Forest on hover. Quotes get a Driftwood left border in Bitter, and separators are Driftwood.
 - templates/ holds the custom Home, Contact and Single Post templates from Lab 2. parts/ holds the custom header and footer.
+- Week 4 added single-trip and archive-trip for the Trips post type. The post type, the difficulty taxonomy and the trip fields live in my rockriver-core plugin, and these two templates show the fields with block bindings.
 - styles/night-paddle.json is a dark style variation for moonlight paddle events. It darkens the background, lightens the text and brightens River Green so buttons stay readable.
 
 ## Files
