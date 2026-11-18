@@ -1,0 +1,67 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"var:preset|spacing|50"},"padding":{"bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group" style="margin-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--60)"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide"><!-- wp:query-title {"type":"archive","showPrefix":false} /-->
+
+<!-- wp:paragraph {"fontSize":"large"} -->
+<p class="has-large-font-size">Every trip comes with the boat, paddles, life jackets and a shuttle back to your car. Pick a level that fits your group and then choose a route.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:query {"queryId":3,"query":{"perPage":12,"pages":0,"offset":0,"postType":"trip","order":"asc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|50"}}}} -->
+<div class="wp-block-query alignwide" style="margin-top:var(--wp--preset--spacing--50)"><!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
+<!-- wp:group {"style":{"border":{"radius":"10px"},"dimensions":{"minHeight":"100%"},"spacing":{"padding":{"top":"var:preset|spacing|30","right":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|30"},"blockGap":"var:preset|spacing|20"}},"backgroundColor":"river-mist","layout":{"type":"default"}} -->
+<div class="wp-block-group has-river-mist-background-color has-background" style="border-radius:10px;min-height:100%;padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)"><!-- wp:post-featured-image {"isLink":true,"aspectRatio":"4/3","style":{"border":{"radius":"8px"}}} /-->
+
+<!-- wp:post-terms {"term":"difficulty","style":{"typography":{"textTransform":"uppercase","letterSpacing":"2px","fontWeight":"700"},"elements":{"link":{"color":{"text":"var:preset|color|accent-2"}}}},"textColor":"accent-2","fontSize":"small"} /-->
+
+<!-- wp:post-title {"level":3,"isLink":true,"fontSize":"large"} /-->
+
+<!-- wp:group {"style":{"spacing":{"blockGap":"0.4em"}},"layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"core/post-meta","args":{"key":"distance_miles"}}}},"fontSize":"small"} -->
+<p class="has-small-font-size"></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">·</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"core/post-meta","args":{"key":"paddle_time"}}}},"fontSize":"small"} -->
+<p class="has-small-font-size"></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"core/post-meta","args":{"key":"price"}}}},"style":{"typography":{"fontWeight":"700"}},"fontSize":"small"} -->
+<p class="has-small-font-size" style="font-weight:700"></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"core/post-meta","args":{"key":"min_age"}}}},"fontSize":"small"} -->
+<p class="has-small-font-size"></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:read-more {"content":"See trip details","style":{"border":{"radius":"99px","width":"1px"},"spacing":{"padding":{"top":"0.5rem","bottom":"0.5rem","left":"1.25rem","right":"1.25rem"}}},"borderColor":"contrast","fontSize":"small"} /--></div>
+<!-- /wp:group -->
+<!-- /wp:post-template -->
+
+<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"center"}} -->
+<!-- wp:query-pagination-previous /-->
+
+<!-- wp:query-pagination-numbers /-->
+
+<!-- wp:query-pagination-next /-->
+<!-- /wp:query-pagination -->
+
+<!-- wp:query-no-results -->
+<!-- wp:paragraph -->
+<p>New trips are coming soon. Call us at (815) 555-0142 to ask about this season.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:query-no-results --></div>
+<!-- /wp:query -->
+
+<!-- wp:block {"ref":27} /--></main>
+<!-- /wp:group -->
+
+<!-- wp:block {"ref":26} /-->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
